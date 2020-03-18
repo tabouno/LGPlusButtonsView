@@ -315,6 +315,10 @@ typedef NS_ENUM(NSUInteger, LGPlusButtonDescriptionsPosition)
 
     for (LGPlusButton *button in _buttonsArray)
     {
+    	if (!button.isShowing) {
+            continue;
+        }
+    	
         CGPoint newPoint = [self convertPoint:point toView:button];
 
         view = [button hitTest:newPoint withEvent:event];
