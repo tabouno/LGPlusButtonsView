@@ -18,8 +18,7 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
 
 #### Podfile
 ```ruby
-platform :ios, '6.0'
-pod 'LGPlusButtonsView', '~> 1.1.0'
+pod 'LGPlusButtonsView', :git => 'https://github.com/tabouno/LGPlusButtonsView.git', :branch => 'master'
 ```
 
 ### With Carthage
