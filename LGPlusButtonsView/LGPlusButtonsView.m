@@ -1297,6 +1297,10 @@ typedef NS_ENUM(NSUInteger, LGPlusButtonDescriptionsPosition)
 {
     NSUInteger index = button.tag;
 
+    if (!button.isShowing) {
+        return;
+    }
+
     LGPlusButtonDescription *description = _descriptionsArray[index];
 
     if (self.isFirstButtonIsPlusButton && index == 0)
