@@ -1297,7 +1297,7 @@ typedef NS_ENUM(NSUInteger, LGPlusButtonDescriptionsPosition)
 {
     NSUInteger index = button.tag;
 
-    if (!button.isShowing) {
+    if (button.isHidden || !button.isShowing) {
         return;
     }
 
